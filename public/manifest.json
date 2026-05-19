@@ -2,21 +2,21 @@
   "name": "Escuela de Servicio del Precursor",
   "short_name": "Escuela Servicio - 2026",
   "description": "Aplicación web para la gestión y consulta de información de la Escuela de Servicio del Precursor - Circuito Mendoza 1B",
-  "start_url": "/",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#2563eb",
   "orientation": "portrait",
-  "scope": "/",
+  "scope": "./",
   "icons": [
     {
-      "src": "/icon-192x192.svg",
+      "src": "./icon-192x192.svg",
       "sizes": "192x192",
       "type": "image/svg+xml",
       "purpose": "any maskable"
     },
     {
-      "src": "/icon-512x512.svg",
+      "src": "./icon-512x512.svg",
       "sizes": "512x512",
       "type": "image/svg+xml",
       "purpose": "any maskable"
