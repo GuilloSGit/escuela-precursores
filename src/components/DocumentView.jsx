@@ -1,5 +1,6 @@
 import { Calendar, Clock, MapPin, Users, Utensils, Shield, DollarSign, ClipboardList, Music } from 'lucide-react'
 import { Footer } from './Footer.jsx'
+import { coordinadores } from '../data/reunionData.js'
 
 export function DocumentView() {
   return (
@@ -108,10 +109,11 @@ export function DocumentView() {
               <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
                 <p><strong>Asignación de la "Canasta de Mercadería":</strong> Su colaboración consistirá en aportar insumos secos para toda la semana.</p>
                 <p className="mt-2 text-sm"><em>Elementos solicitados:</em> Café, leche en polvo, edulcorante, té digestivo común, servilletas de papel, etc.</p>
-                <p className="mt-2 text-sm"><em>Logística de entrega:</em> Se coordinará con Pablo o Fabricio para llevar estos insumos el <strong>domingo previo</strong> por la tarde, día en que se montarán las heladeras y el sonido en la sala auxiliar del salón.</p>
+                <p className="mt-2 text-sm"><em>Logística de entrega:</em> Se coordinará con {coordinadores.join(' o ')} para llevar estos insumos el <strong>domingo previo</strong> por la tarde, día en que se montarán las heladeras y el sonido en la sala auxiliar del salón.</p>
               </div>
               <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
                 <p><strong>Participación de Voluntarios:</strong> Hay 3 hermanos de Media Agua asistiendo a la escuela. Si otros hermanos de la congregación desean viajar para colaborar de forma presencial, deben avisar previamente a los coordinadores para asignarles un lugar en la cocina o en un break específico.</p>
+                <p className="mt-2 text-sm"><em>Coordinadores:</em> {coordinadores.join(', ')}</p>
               </div>
             </div>
           </section>
@@ -132,37 +134,37 @@ export function DocumentView() {
             
             <div className="space-y-3 md:space-y-4">
               <div className="bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 p-4 md:p-6 rounded-xl">
-                <h4 className="font-bold text-gray-900 dark:text-white mb-1 md:mb-2">Lunes (Centro Rawson — Encargado: Darío)</h4>
+                <h4 className="font-bold text-gray-900 dark:text-white mb-1 md:mb-2">Lunes (Centro Rawson — Encargado: Darío Diaz)</h4>
                 <p className="text-gray-700 dark:text-gray-300"><strong>Plato:</strong> Pollo trozado (se sugiere pechuga o carne limpia; evitar pata-muslo por los desperdicios y la incomodidad al comer) acompañado de ensalada mixta. Se presentará en bandejitas individuales de aluminio con tapa o papel aluminio, transportadas en conservadoras grandes para mantener el calor.</p>
                 <p className="text-gray-700 dark:text-gray-300 mt-2"><strong>Postre:</strong> Flan.</p>
               </div>
 
               <div className="bg-gradient-to-r from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 p-4 md:p-6 rounded-xl">
-                <h4 className="font-bold text-gray-900 dark:text-white mb-1 md:mb-2">Martes (Villa Aberastain — Encargado: Carlos)</h4>
+                <h4 className="font-bold text-gray-900 dark:text-white mb-1 md:mb-2">Martes (Villa Aberastain — Encargado: Carlos Lucero)</h4>
                 <p className="text-gray-700 dark:text-gray-300"><strong>Plato:</strong> Sándwiches de milanesa en pan liviano (para no saturar con harinas pesadas).</p>
                 <p className="text-gray-700 dark:text-gray-300 mt-2"><strong>Postre:</strong> Gelatina (para variar respecto al flan del lunes).</p>
               </div>
 
               <div className="bg-gradient-to-r from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 p-4 md:p-6 rounded-xl">
-                <h4 className="font-bold text-gray-900 dark:text-white mb-1 md:mb-2">Miércoles (Norte Rawson — Encargado: Rubén)</h4>
+                <h4 className="font-bold text-gray-900 dark:text-white mb-1 md:mb-2">Miércoles (Norte Rawson — Encargado: Rubén Coronado)</h4>
                 <p className="text-gray-700 dark:text-gray-300"><strong>Plato:</strong> Variedad de pizzas (3 a 4 tipos: queso, paleta, salame, cuatro quesos).</p>
                 <p className="text-gray-700 dark:text-gray-300 mt-2"><strong>Postre:</strong> Bombón helado o helado en caja (fácil distribución).</p>
               </div>
 
               <div className="bg-gradient-to-r from-orange-50 to-orange-100 dark:from-orange-900/20 dark:to-orange-800/20 p-4 md:p-6 rounded-xl">
-                <h4 className="font-bold text-gray-900 dark:text-white mb-1 md:mb-2">Jueves (Oeste — Encargado: Gonzalo)</h4>
+                <h4 className="font-bold text-gray-900 dark:text-white mb-1 md:mb-2">Jueves (Oeste — Encargado: Gonzalo Dias)</h4>
                 <p className="text-gray-700 dark:text-gray-300"><strong>Plato:</strong> Variedad de tartas saladas.</p>
                 <p className="text-gray-700 dark:text-gray-300 mt-2"><strong>Postre:</strong> Frutas de estación (por ejemplo, mandarinas).</p>
               </div>
 
               <div className="bg-gradient-to-r from-pink-50 to-pink-100 dark:from-pink-900/20 dark:to-pink-800/20 p-4 md:p-6 rounded-xl">
-                <h4 className="font-bold text-gray-900 dark:text-white mb-1 md:mb-2">Viernes (Los Berros)</h4>
+                <h4 className="font-bold text-gray-900 dark:text-white mb-1 md:mb-2">Viernes (Los Berros - Encargado: Cristian Castro)</h4>
                 <p className="text-gray-700 dark:text-gray-300"><strong>Plato:</strong> Empanadas de dos variedades: carne, y jamón y queso.</p>
                 <p className="text-gray-700 dark:text-gray-300 mt-2"><strong>Postre:</strong> Duraznos en conserva con crema (fácil de servir en bandejitas chicas).</p>
               </div>
 
               <div className="bg-gradient-to-r from-teal-50 to-teal-100 dark:from-teal-900/20 dark:to-teal-800/20 p-4 md:p-6 rounded-xl">
-                <h4 className="font-bold text-gray-900 dark:text-white mb-1 md:mb-2">Sábado (Villa Krause — Encargado: Hugo)</h4>
+                <h4 className="font-bold text-gray-900 dark:text-white mb-1 md:mb-2">Sábado (Villa Krause — Encargado: Hugo Quiroga)</h4>
                 <p className="text-gray-700 dark:text-gray-300"><strong>Plato:</strong> Hamburguesas de carne molida (elegidas para optimizar costos y maximizar porciones).</p>
                 <p className="text-gray-700 dark:text-gray-300 mt-2"><strong>Postre:</strong> Ensalada de frutas (jardinera) con crema y vainillas.</p>
               </div>
@@ -288,7 +290,7 @@ export function DocumentView() {
                 <p><strong>Detalles y Regalos:</strong> Se autoriza a las congregaciones (o hermanos en particular) a llevar pequeños presentes, manualidades o cartelitos de ánimo para los 45 estudiantes. En el caso de Media Agua, pueden enviar estos detalles dentro de las cajas de mercadería el domingo previo.</p>
               </div>
               <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
-                <p><strong>Registro Fotográfico:</strong> Se solicita a todos los encargados tomar fotografías de los hermanos trabajando en las cocinas y pasarlas a Pablo o Fabricio para documentar el esfuerzo y el bonito espíritu de la actividad.</p>
+                <p><strong>Registro Fotográfico:</strong> Se solicita a todos los encargados tomar fotografías de los hermanos trabajando en las cocinas y pasarlas a {coordinadores.join(' o ')} para documentar el esfuerzo y el bonito espíritu de la actividad.</p>
               </div>
               <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
                 <p><strong>El Break Final (Sábado de Cierre):</strong> El año pasado una sola congregación absorbió este gasto y esfuerzo, lo cual fue excesivo. Este año, las <strong>4 congregaciones de Rawson (anfitrionas)</strong> se dividirán equitativamente los gastos económicos y los voluntarios para armar un servicio tipo copetín (sándwiches pequeños, bocaditos, tartas dulces) destinado a los estudiantes y a los familiares/invitados que asistan al acto de clausura.</p>

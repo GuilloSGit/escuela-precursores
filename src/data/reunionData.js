@@ -145,7 +145,8 @@ export const reunionData = [
     category: "Media Agua",
     title: "Voluntarios",
     content: "Hay 3 hermanos de Media Agua asistiendo a la escuela. Si otros hermanos desean colaborar presencialmente, deben avisar previamente a los coordinadores.",
-    tags: ["media agua", "voluntarios", "3 hermanos", "coordinadores"]
+    tags: ["media agua", "voluntarios", "3 hermanos", "coordinadores"],
+    coordinadores: ["Pablo Loaiza", "Fabricio Alam"]
   },
   {
     id: 22,
@@ -361,42 +362,42 @@ export const reunionData = [
     id: 52,
     category: "Asignaciones",
     title: "Lunes - Centro Rawson",
-    content: "Congregación Centro Rawson asignada para el lunes. Encargado: Darío.",
+    content: "Congregación Centro Rawson asignada para el lunes. Encargado: Darío Diaz.",
     tags: ["lunes", "Centro Rawson", "Darío", "asignación"]
   },
   {
     id: 53,
     category: "Asignaciones",
     title: "Martes - Villa Aberastain",
-    content: "Congregación Villa Aberastain asignada para el martes. Encargado: Carlos.",
+    content: "Congregación Villa Aberastain asignada para el martes. Encargado: Carlos Lucero.",
     tags: ["martes", "Villa Aberastain", "Carlos", "asignación"]
   },
   {
     id: 54,
     category: "Asignaciones",
     title: "Miércoles - Norte Rawson",
-    content: "Congregación Norte Rawson asignada para el miércoles. Encargado: Rubén.",
+    content: "Congregación Norte Rawson asignada para el miércoles. Encargado: Rubén Coronado.",
     tags: ["miércoles", "Norte Rawson", "Rubén", "asignación"]
   },
   {
     id: 55,
     category: "Asignaciones",
-    title: "Jueves - Oeste",
-    content: "Congregación Oeste asignada para el jueves. Encargado: Gonzalo.",
-    tags: ["jueves", "oeste", "Gonzalo", "asignación"]
+    title: "Jueves - Oeste Rawson",
+    content: "Congregación Oeste Rawson asignada para el jueves. Encargado: Gonzalo Dias.",
+    tags: ["jueves", "Oeste Rawson", "Gonzalo", "asignación"]
   },
   {
     id: 56,
     category: "Asignaciones",
     title: "Viernes - Los Berros",
-    content: "Congregación Los Berros asignada para el viernes.",
-    tags: ["viernes", "Los Berros", "asignación"]
+    content: "Congregación Los Berros asignada para el viernes. Encargado: Cristian Castro.",
+    tags: ["viernes", "Los Berros", "Cristian", "asignación"]
   },
   {
     id: 57,
     category: "Asignaciones",
     title: "Sábado - Villa Krause",
-    content: "Congregación Villa Krause asignada para el sábado. Encargado: Hugo.",
+    content: "Congregación Villa Krause asignada para el sábado. Encargado: Hugo Quiroga.",
     tags: ["sábado", "Villa Krause", "Hugo", "asignación"]
   },
   {
@@ -742,3 +743,6 @@ export const categories = [...new Set(reunionData.map(item => item.category))]
 
 // Get unique tags
 export const allTags = [...new Set(reunionData.flatMap(item => item.tags))]
+
+// Get coordinadores from Media Agua section
+export const coordinadores = reunionData.find(item => item.id === 21)?.coordinadores || []
