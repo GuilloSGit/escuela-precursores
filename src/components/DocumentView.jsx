@@ -132,7 +132,7 @@ export function DocumentView() {
             
             <div className="space-y-3 md:space-y-4">
               <div className="bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 p-4 md:p-6 rounded-xl">
-                <h4 className="font-bold text-gray-900 dark:text-white mb-1 md:mb-2">Lunes (Central Shoes — Encargado: Darío)</h4>
+                <h4 className="font-bold text-gray-900 dark:text-white mb-1 md:mb-2">Lunes (Centro Rawson — Encargado: Darío)</h4>
                 <p className="text-gray-700 dark:text-gray-300"><strong>Plato:</strong> Pollo trozado (se sugiere pechuga o carne limpia; evitar pata-muslo por los desperdicios y la incomodidad al comer) acompañado de ensalada mixta. Se presentará en bandejitas individuales de aluminio con tapa o papel aluminio, transportadas en conservadoras grandes para mantener el calor.</p>
                 <p className="text-gray-700 dark:text-gray-300 mt-2"><strong>Postre:</strong> Flan.</p>
               </div>
